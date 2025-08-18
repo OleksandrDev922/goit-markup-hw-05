@@ -528,6 +528,35 @@ ol {
 .social-link-fot:focus {
   background-color: #31d0aa;
 }
+.subscr {
+  color: #ffffff;
+  width: 75px;
+  height: 24px;
+  top: 100px;
+  size: 16px;
+  font-weight: 500;
+}
+.text-mail {
+  width: 264px;
+  height: 40px;
+  top: 140px;
+  border-radius: 4px;
+  border: 1px;
+}
+.subscribe-but {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 64px 8px 24px;
+  display: inline;
+  width: 165px;
+  top: 140px;
+
+  display: inline;
+}
+
 .menu-btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
