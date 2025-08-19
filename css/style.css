@@ -557,10 +557,11 @@ ol {
   color: #ffffff;
 }
 .subscribe-but {
+  min-width: 165px;
+  height: 40px;
   display: flex;
   justify-content: center;
-  justify-content: center;
-  justify-content: center;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
