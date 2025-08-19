@@ -532,6 +532,8 @@ ol {
   display: flex;
   gap: 24px;
 }
+.label-vans {
+}
 .subscr {
   color: #ffffff;
   width: 75px;
