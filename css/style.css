@@ -683,8 +683,15 @@ ol {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.eave-nam-inputs:focus{
-  border-color: #4D5AE5;
+.eave-nam-inputs:focus {
+  border-color: #4d5ae5;
+}
+.contacts-svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
