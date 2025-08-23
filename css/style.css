@@ -614,7 +614,7 @@ ol {
 }
 
 .eave-your-contacts {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
 
@@ -741,6 +741,7 @@ ol {
 .checkbox {
   margin-bottom: 24px;
 }
+
 .chek-inp-lab {
   font-size: 12px;
   line-height: 1.17;
