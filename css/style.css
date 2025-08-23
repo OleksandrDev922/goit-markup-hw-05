@@ -92,7 +92,6 @@ ol {
   padding: 0 15px 0 15px;
 }
 .header {
-  /* padding: 24px 156px; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -106,7 +105,7 @@ ol {
 }
 .header-nav {
   display: flex;
-  gap: 76px;
+  /* gap: 76px; */
   position: relative;
   align-items: center;
 }
@@ -146,6 +145,7 @@ ol {
 .header-nav-link-may {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 20px;
 }
 
 .header-nav-link {
@@ -157,7 +157,7 @@ ol {
   width: 48; */
   padding: 24px 0;
   position: relative;
-  color: #404bbf;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link:hover,
@@ -192,7 +192,6 @@ ol {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -262,11 +261,11 @@ ol {
   height: 112px;
 }
 .advantages-svg {
-  padding: 24px 100px;
+  /* padding: 24px 100px; */
 }
 
 .advantages-item-svg {
-  padding: 24px 100px;
+  /* padding: 24px 100px; */
 }
 
 .advantages-list {
@@ -313,6 +312,7 @@ ol {
   display: flex;
   gap: 24px;
   justify-content: center;
+  padding-top: 8px;
 }
 
 .instagram {
@@ -327,7 +327,9 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  display: flex;
+  padding-bottom: 8px;
+
+  /* display: flex; */
   /* margin-bottom: 8px; */
 }
 .portfolio-title,
@@ -358,7 +360,7 @@ ol {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
+  /* row-gap: 48px; */
   column-gap: 24px;
 }
 .portfolio-item {
@@ -374,9 +376,9 @@ ol {
 }
 .portfolio-blok {
   padding: 32px 16px;
-  display: flex;
+  /* display: flex;
   gap: 8px;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .team-blok {
@@ -539,6 +541,7 @@ ol {
   /* display: flex; */
   /* height: 80px;
   top: 100px; */
+  margin-left: 40px;
 }
 .subscr {
   color: #ffffff;
