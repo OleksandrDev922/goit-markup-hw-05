@@ -528,6 +528,11 @@ ol {
 }
 .team-svg {
   fill: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-svg:focus,
+.team-svg:hover {
+  fill: #ffffff;
 }
 .social-link-fot:hover,
 .social-link-fot:focus {
@@ -554,6 +559,8 @@ ol {
 }
 .litter-svg {
   margin-left: 16px;
+}
+.team-svg {
 }
 .text-mail {
   width: 264px;
@@ -687,6 +694,7 @@ ol {
 }
 .eave-nam-input {
   position: relative;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .eave-nam-inputs {
   width: 100%;
