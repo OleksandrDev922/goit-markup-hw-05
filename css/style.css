@@ -614,7 +614,7 @@ ol {
 }
 
 .eave-your-contacts {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -628,12 +628,12 @@ ol {
 
 .eave-your-contacts-wrapper {
   width: 408px;
-  height: 584px;
+  /* height: 584px; */
   min-height: 584px;
   padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
-
-  overflow: auto;
+  transform: translate(-50%, -50%);
+  /* overflow: auto; */
   position: absolute;
   top: 50%;
   left: 50%;
