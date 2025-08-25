@@ -625,29 +625,36 @@ ol {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Контейнер модалки */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.eave-your-contacts-wrapper {
-  width: 408px;
-  /* height: 584px; */
-  min-height: 584px;
-  padding: 72px 24px 24px 24px;
-  background-color: #fcfcfc;
-  transform: translate(-50%, -50%);
-  /* overflow: auto; */
+/* Модальне вікно */
+.modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
+  background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.eave-your-contacts-title {
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 16px;
-}
-.contacts-btn {
+
+/* Кнопка закриття */
+.modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -659,69 +666,73 @@ ol {
   justify-content: center;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
   cursor: pointer;
+  padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #ffffff;
 }
-.contacts-btn:hover,
-.contacts-btn:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: #404bbf;
   border: none;
+}
+.modal-close-btn:hover svg,
+.modal-close-btn:focus svg {
   fill: #ffffff;
 }
-.eave-your {
+
+/* Заголовок */
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color, #2e2f42);
+  margin-bottom: 16px;
+}
+
+/* Форма */
+.form-group {
   margin-bottom: 8px;
 }
-.label-van {
+.form-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--label-color, #8e8f99);
   display: block;
   margin-bottom: 4px;
 }
-.eave-your-form {
-  margin-bottom: 8px;
-}
-.eave-nam {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
-}
-.eave-nam-input {
+.input-wrapper {
   position: relative;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.eave-nam-inputs {
-  width: 360px;
-  height: 58px;
+.form-input {
+  width: 100%;
+  height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  background-color: transparent;
   padding-left: 38px;
+  background-color: transparent;
   outline: transparent;
-  /* transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.eave-nam-inputs:focus {
+.form-input:focus {
   border-color: #4d5ae5;
 }
-.contacts-svg {
+.input-icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.coment {
-  margin-bottom: 16px;
+.form-input:focus + .input-icon {
+  fill: #4d5ae5;
 }
-.textarea-comit {
+
+/* Textarea */
+.form-textarea {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -736,35 +747,50 @@ ol {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.textarea-comit:focus {
+.form-textarea:focus {
   border-color: #4d5ae5;
 }
-.checkbox {
-  margin-bottom: 24px;
-}
 
-.chek-inp-lab {
+/* Checkbox */
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.form-checkbox-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: var(--label-color, #8e8f99);
+  display: flex;
+  align-items: center;
 }
-.label-span {
+.checkbox-custom {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin: 0 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.privacy {
-  color: #4d5ae5;
+.visually-hidden:checked + .form-checkbox-label .checkbox-custom {
+  background-color: var(--checkbox-bg, #404bbf);
+  border: none;
+  fill: var(--checkbox-icon, #f4f4fd);
 }
-.send-btn {
+.privacy-link {
+  color: var(--link-color, #4d5ae5);
+}
+
+/* Кнопка відправки */
+.form-submit-btn {
   display: block;
   min-width: 169px;
   height: 56px;
@@ -778,4 +804,5 @@ ol {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
