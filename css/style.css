@@ -610,7 +610,7 @@ ol {
   color: var(--btn-active-color-text);
 }
 .eam-svg-may {
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .eave-your-contacts {
@@ -624,9 +624,6 @@ ol {
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .eave-your-contacts-wrapper {
@@ -808,5 +805,5 @@ ol {
   border: none;
 }
 .checkbox input:checked + .chek-inp-lab .label-span .contacts-svg {
-  fill: #f4f4fd;
+  fill: var(--icon-color);
 }
