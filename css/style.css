@@ -614,13 +614,16 @@ ol {
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 999;
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .eave-your-contacts-wrapper {
@@ -791,4 +794,9 @@ ol {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0% auto;
+}
+.visually-hidden:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
