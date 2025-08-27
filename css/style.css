@@ -800,3 +800,10 @@ ol {
   border: none;
   fill: #f4f4fd;
 }
+.checkbox input:checked + .chek-inp-lab .label-span {
+  background-color: #404bbf;
+  border: none;
+}
+.checkbox input:checked + .chek-inp-lab .label-span .contacts-svg {
+  fill: #f4f4fd;
+}
