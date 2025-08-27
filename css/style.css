@@ -611,7 +611,7 @@ ol {
 }
 
 .eave-your-contacts {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 999;
