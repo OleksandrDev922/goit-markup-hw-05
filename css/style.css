@@ -558,8 +558,7 @@ ol {
 .litter-svg {
   margin-left: 16px;
 }
-.team-svg {
-}
+
 .text-mail {
   width: 264px;
   height: 40px;
@@ -672,8 +671,9 @@ ol {
   background-color: #404bbf;
   border: none;
 }
-.contacts-btn:hover .team-svg-may,
-.ccontacts-btn:focus .team-svg-may {
+.contacts-btn:hover,
+.ccontacts-btn:focus {
+  fill: #ffffff;
   fill: #ffffff;
 }
 
