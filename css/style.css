@@ -805,5 +805,8 @@ ol {
   border: none;
 }
 .checkbox input:checked + .chek-inp-lab .label-span .contacts-svg {
-  fill: var(--icon-color);
+  /* fill: var(--icon-color); */
+}
+.team-svg-may {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
