@@ -763,7 +763,7 @@ ol {
   margin: 0% auto;
 }
 
-.visually-hidden:checked .label-span {
+#user-privacy:checked + .chek-inp-lab .label-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
