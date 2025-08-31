@@ -682,15 +682,11 @@ ol {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.eave-nam-inputs:focus {
-  /* outline: none; */
+.eave-nam-inputs:focus + .contacts-svg {
+  outline: none;
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
-/* .eave-nam-inputs:focus .contacts-svg {
-  fill: #4d5ae5;
-} */
-
 .contacts-svg {
   position: absolute;
   left: 16px;
