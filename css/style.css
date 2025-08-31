@@ -581,10 +581,10 @@ ol {
 }
 
 .eave-your-contacts {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
-  z-index: 999;
+
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
