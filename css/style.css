@@ -134,8 +134,8 @@ ol {
 .header-nav-link-may::after {
   position: absolute;
   content: '';
-  width: 100%;
-  left: 0;
+  width: 48px;
+  left: 24px;
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
@@ -145,6 +145,8 @@ ol {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-bottom: 20px;
+  padding: 24px;
+  
 }
 
 .header-nav-link {
@@ -260,11 +262,9 @@ ol {
   justify-content: center;
   height: 112px;
 }
-.advantages-svg {
-}
 
-.advantages-item-svg {
-}
+
+
 
 .advantages-list {
   display: flex;
@@ -342,7 +342,7 @@ ol {
 .team {
   background-color: #f4f4fd;
 
-  text-align: center;
+  /* text-align: center; */
 
   padding: 120px 0;
 }
@@ -353,8 +353,8 @@ ol {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
   column-gap: 24px;
+
 }
 .portfolio-item {
   width: calc((100% - 48px) / 3);
@@ -401,7 +401,7 @@ ol {
   height: 100%;
 
   padding: 40px 32px;
-  width: 100%;
+  /* width: 100%;  */
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -579,9 +579,9 @@ ol {
 .eam-svg-may {
   fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.eave-your-contacts {
-  position: fixed;
+{
+/* .eave-your-contacts {
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -590,11 +590,11 @@ ol {
   background-color: rgba(46, 47, 66, 0.4);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .eave-your-contacts-wrapper {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -606,7 +606,7 @@ ol {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
-}
+} */
 .contacts-btn {
   position: absolute;
   top: 24px;
@@ -648,9 +648,6 @@ ol {
   margin-bottom: 8px;
 }
 
-/* .eave-your {
-  margin-bottom: 8px;
-} */
 .label-van {
   font-size: 12px;
   line-height: 1.17;
@@ -770,4 +767,4 @@ ol {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-}
+} */
